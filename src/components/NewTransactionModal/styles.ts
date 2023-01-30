@@ -7,7 +7,7 @@ export const Overlay = styled(Dialog.Overlay)`
   height: 100vh;
   inset: 0;
   background: rgba(0, 0, 0, 0.75);
-`
+`;
 
 export const Content = styled(Dialog.Content)`
   min-width: 32rem;
@@ -29,7 +29,7 @@ export const Close = styled(Dialog.Close)`
   top: 1.5rem;
   right: 1.5rem;
   cursor: pointer;
-  color: ${props => props.theme['gray-500']};
+  color: ${(props) => props.theme["gray-500"]};
   line-height: 0;
 `;
 
@@ -39,7 +39,7 @@ export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`
+`;
 
 export const Input = styled.input`
   border-radius: 6px;
@@ -50,6 +50,38 @@ export const Input = styled.input`
 
   &::placeholder {
     color: ${(props) => props.theme["gray-500"]};
+  }
+`;
+
+export const TransactionType = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+`;
+
+interface TransactionTypeButtonProps {
+  variant: "income" | "outcome";
+}
+
+export const TransactionTypeButton = styled.button<TransactionTypeButtonProps>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 6px;
+  background-color: ${(props) => props.theme["gray-700"]};
+  color: ${(props) => props.theme["gray-300"]};
+
+  svg {
+    color: ${(props) =>
+      props.variant === "income"
+        ? props.theme["green-300"]
+        : props.theme["red-300"]};
   }
 `;
 
