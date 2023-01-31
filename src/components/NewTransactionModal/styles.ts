@@ -114,7 +114,12 @@ export const Button = styled.button`
   margin-top: 1.5rem;
   cursor: pointer;
 
-  &:hover {
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
     background: ${(props) => props.theme["green-700"]};
     transition: background 0.2s;
   }
