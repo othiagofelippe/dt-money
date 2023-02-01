@@ -23,6 +23,22 @@
       "category": "Educação",
       "price": 1500,
       "createdAt": "Jan 29 2023 09:57:37 GMT-0300"
+    },
+    {
+      "description": "Desenvolvimento de App",
+      "category": "Venda",
+      "price": 10000,
+      "type": "income",
+      "createdAt": "2023-02-01T13:08:40.045Z",
+      "id": 4
+    },
+    {
+      "description": "Pão",
+      "category": "Alimentação",
+      "price": 3,
+      "type": "income",
+      "createdAt": "2023-02-01T13:41:50.641Z",
+      "id": 5
     }
   ]
 }
