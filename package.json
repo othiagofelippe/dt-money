@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "dev:server": "json-server server.json -w -d 500",
+    "lint": "eslint src --ext .tsx,.ts",
+    "lint:fix": "eslint src --ext .tsx,.ts --fix",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -23,9 +25,11 @@
     "zod": "^3.20.2"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
+    "eslint": "^8.33.0",
     "json-server": "^0.17.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0"
