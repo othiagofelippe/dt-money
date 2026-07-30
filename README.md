@@ -1,5 +1,8 @@
-# Dt Money - React
-This project was developed during the Rocketseat front-end course and consists of a web app for financial management.
+# DT Money
+
+A financial management web app built with React. Built in January 2023 during Rocketseat's front-end course to practice Vite, Styled Components, Radix UI and form handling with Zod.
+
+🔗 [Live demo](https://dt-money-nine-indol.vercel.app)
 
 ## Features:
 
