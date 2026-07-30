@@ -4,6 +4,8 @@ A financial management web app built with React. Built in January 2023 during Ro
 
 🔗 [Live demo](https://dt-money-nine-indol.vercel.app)
 
+![DT Money screenshot](.github/screenshot.png)
+
 ## Features:
 
 - Registers income and expenses;
